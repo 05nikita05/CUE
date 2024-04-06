@@ -1,0 +1,247 @@
+@font-face {
+  font-family: M-bold;
+  src: url(./fonts/MABRYPRO-BOLD.ttf);
+}
+@font-face {
+  font-family: M-medium;
+  src: url(./fonts/MABRYPRO-MEDIUM.ttf);
+}
+@font-face {
+  font-family: M-light;
+  src: url(./fonts/MABRYPRO-LIGHT.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: M-bold;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #fff;
+}
+#cover {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: #ff3227;
+  z-index: 99;
+}
+#nav {
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  background-color: #fff9ec;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  z-index: 9999;
+}
+#nav h4 {
+  color: #ff3227;
+  text-transform: uppercase;
+  font-size: 0.9vw;
+}
+#nav > img {
+  height: 2rem;
+  margin-left: 4rem;
+}
+#nav-part2 {
+  display: flex;
+  gap: 0.5rem;
+}
+#page1 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff9ec;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  position: relative;
+  padding-bottom: 40vh;
+  overflow: hidden;
+}
+#page1 .img-div {
+  width: 100%;
+  top: -5%;
+}
+.img-div img {
+  width: 110%;
+  margin-left: -5%;
+  object-fit: cover;
+}
+
+#page1 #text {
+  width: 60%;
+}
+#text span {
+  font-size: 5vw;
+  font-family: M-Medium;
+  font-weight: 400;
+  color: #ff3227;
+  text-transform: uppercase;
+}
+#on {
+  top: 55vw;
+  left: 30vw;
+  position: absolute;
+  z-index: 12;
+}
+#let {
+  top: 33vw;
+  left: 33vw;
+  position: absolute;
+  z-index: 9;
+}
+#get {
+  top: 43vw;
+  left: 0;
+  position: absolute;
+  z-index: 9;
+}
+#it {
+  top: 53vw;
+  right: 20vw;
+  position: absolute;
+  z-index: 9;
+}
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff9ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36vw;
+  position: relative;
+  /* padding-bottom: 20vh; */
+}
+#page2 .center-img-div {
+  position: absolute;
+  z-index: 999;
+  width: 26vw;
+  z-index: 8;
+  overflow: hidden;
+  scale: 1.2;
+  /* position: relative; */
+}
+.center-img-div img {
+  width: 100%;
+  object-fit: cover;
+  scale: 1.5;
+  object-position: center;
+}
+#center-left {
+  display: flex;
+  gap: 1.5vw;
+  width: 30vw;
+  flex-direction: column;
+  margin-bottom: 38vh;
+  background-color: #fff;
+}
+#center-right {
+  display: flex;
+  gap: 1.5vw;
+  width: 30vw;
+  flex-direction: column;
+  margin-top: 50vh;
+}
+#page2 h4 {
+  position: absolute;
+  bottom: 8vw;
+  color: #ff3227;
+}
+#page3 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff9ec;
+  position: relative;
+  padding: 3vw 3vw;
+  padding-top: 12vw;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+}
+.page3-centerElement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 9.5rem;
+  /* justify-content: center; */
+}
+.centerElement-part {
+  display: flex;
+  align-items: center;
+}
+.centerElement-part h1 {
+  font-size: 9rem;
+  color: #ff3227;
+  font-family: M-medium;
+  font-weight: 100;
+}
+#page3-text-wrapper{
+  width: 92vw;
+  padding-top: 16vw;
+
+}
+#page3-text-wrapper h2{
+  font-size: 2.5vw;
+  color: #ff3227;
+}
+#page3-text-wrapper h2 span{
+  font-size: 1vw;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+#page4 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ff3227;
+  position: relative;
+}
+#page4-heading-wrapper{
+  width: 70vw;
+  padding: 6vw 3vw;
+}
+#page4-heading-wrapper h1{
+  font-size: 8vw;
+  line-height: 1;
+  color: #fff;
+}
+#page4-containerDiv{
+  display: flex;
+}
+#page4-containerDiv-text-wrapper{
+  width: 75vw;
+  padding: 0 3vw;
+  padding-top: 9vw;
+}
+#page4-containerDiv-text-wrapper h2{
+  font-size: 2.8vw;
+  font-weight: 100;
+  color: #fff;
+  line-height: 1.2;
+}
+#page4-containerDiv-text-wrapper h2 span{
+  font-size: 1vw;
+  font-weight: 100;
+}
+#page4-containerDiv-images{
+  display: flex;
+  align-items: center;
+}
+.image{
+  width: 30vw;
+  height: 40vw;
+}
+.image img{
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+}
